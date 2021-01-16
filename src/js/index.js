@@ -89,8 +89,8 @@ async function initDB(ipfs) {
         }
     }
 
-    // Creates a db named DecentralizedStore
-    //const aviondb = await AvionDB.init("Decentralized-Store", ipfs);
+    // Creates a db named DecentralizedMarketplace
+    //const aviondb = await AvionDB.init("Decentralized-Marketplace", ipfs);
     const aviondb = await AvionDB.open("/orbitdb/zdpuAkzbX6qGMC3XPshsg8NAusVmeN18W5c7tqisM5DvvYrxE/items", ipfs, options);
 
     // Creates a Collection named items
@@ -110,7 +110,7 @@ async function initDB2(ipfs) {
     const orbitdb = await OrbitDB.createInstance(ipfs, options);
 
     // Create / Open a database
-    const db = await orbitdb.keyvalue("Decentralized-Store");
+    const db = await orbitdb.keyvalue("Decentralized-Marketplace");
     await db.load();
 
     // Listen for updates from peers
