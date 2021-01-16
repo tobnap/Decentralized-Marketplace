@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Decentralized Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bower:js -->
+    <script src='../bower_components/jquery/dist/jquery.min.js'></script>
+    <!-- endbower -->
+    <script src='js/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs@0.44.0/dist/index.min.js"></script>
+    <script src="https://unpkg.com/aviondb/dist/aviondb.min.js"></script>
+</head>
+<body>
+    <div id='container'>
+        <div id='loader'>
+            <h1>Decentralized Store</h1>
+            <p>Loading...</p>
+        </div>
+        <div id='content' style='display: none;'>
+            <div class='topnav'>
+                <h1>Decentralized Store</h1>
+                <button onclick='checkout()' class='checkout'>Checkout</button>
+                <button onclick="addItem(db, items.length, 'file:///C:/Users/tobna/git/idk/src/item.html', 'https://discountseries.com/wp-content/uploads/2017/09/default.jpg', 'test', 20, 10)" class='checkout'>Add Page</button>
+            </div>
+            <div id='item-container'></div>
+        </div>
+    </div>
+</body>
+</html>

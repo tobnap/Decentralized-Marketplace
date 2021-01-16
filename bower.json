@@ -1,0 +1,15 @@
+{
+  "name": "wiki",
+  "description": "",
+  "main": "./src/index.html",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
